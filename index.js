@@ -32,8 +32,10 @@ function play(question, answer) {
   } else {
     console.log("Wrong!");
     score = score - 1;
+    console.log(chalk.hex("#93c5fd")("The correct answer is: " + answer))
   }
-  console.log(chalk.hex("#93c5fd")("Your current score is: " + score));
+
+  console.log(chalk.cyanBright("Your current score is: " + score));
   console.log(chalk.hex("#312e81")("--------------"));
 }
 
@@ -93,12 +95,12 @@ function game() {
 
 // showing high scores
 function showScores() {
-  console.log(chalk.cyanBright("Yippeee! You scored: " + score));
+  console.log(chalk.hex("#a5f3fc")("Yippeee! You scored: " + score));
   console.log(chalk.hex("#312e81")("--------------"));
   console.log(chalk.hex("#93c5fd")("See how well you fared against others! Tell me your score and I shall update it! "));
   for (var i = 0; i < highScore.length; i++) {
     var highScorer = highScore[i]
-    console.log(chalk.cyanBright(highScorer.name + ": " + highScorer.score))
+    console.log(chalk.hex("#a5f3fc")(highScorer.name + ": " + highScorer.score))
   }
 
 }
