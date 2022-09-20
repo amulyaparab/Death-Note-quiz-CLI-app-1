@@ -1,5 +1,5 @@
 # Death-Note-quiz-CLI-app-1
-This is a CLI fandom quiz app made with NodeJS.
+This is a CLI fandom quiz app made with NodeJS on Replit.
 # How it works: 
 * You Enter required input 
 * You play the quiz based on Death Note
